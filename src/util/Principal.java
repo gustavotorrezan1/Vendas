@@ -19,7 +19,7 @@ public class Principal {
 		compra.setDataFinal(null);
 		compra.setProdutos(null);
 		compra.setStatus(0);
-		compra.setValor(0);
+		compra.setValor(100);
 				
 		Fornecedor fornecedor = new Fornecedor();
 		fornecedor.setId(0);
