@@ -10,5 +10,60 @@ package util;
  * @author GustavoTorrezani
  */
 public class Principal {
-    
+    public static void main (String[] args) {
+		Compra compra = new Compra();
+		compra.setId(1);
+		compra.setUsuario(null);
+		compra.setData(null);
+		compra.setDataEntrega(null);
+		compra.setDataFinal(null);
+		compra.setProdutos(null);
+		compra.setStatus(0);
+		compra.setValor(0);
+				
+		Fornecedor fornecedor = new Fornecedor();
+		fornecedor.setId(0);
+		fornecedor.setNome("Joabe");
+		fornecedor.setCnpj(null);
+		fornecedor.setRua(null);
+		fornecedor.setComp(null);
+		fornecedor.setNum(0);
+		fornecedor.setBairro(null);
+		fornecedor.setCidade(null);
+		fornecedor.setEstado(null);
+		fornecedor.setCep(null);
+		fornecedor.setTelefone1(null);
+		fornecedor.setTelefone2(null);
+		
+		Produto produto = new Produto();
+		produto.setCategoria(null);
+		produto.setCodBar(0);
+		produto.setNomProd(null);
+		produto.setPrecoCus(0);
+		produto.setPrecoVen(0);
+		produto.setQntEst(0);
+		produto.setTipoUn(null);
+		
+		Usuario usuario = new Usuario();
+		usuario.setLogin(null);
+		usuario.setNivPerm(0);
+		usuario.setSenha("1234");
+		
+		Venda venda = new Venda();
+		venda.setData(null);
+		venda.setId(0);
+		venda.setNomCliente(null);
+		venda.setProdutos(null);
+		venda.setUsuario(usuario);
+		venda.setValor(0);
+		
+		
+		System.out.println("A data da compra:" + compra.getData());
+		System.out.println("O usuario da compra:" + compra.getUsuario());
+		System.out.println("A data Entrega da compra:" + compra.getDataEntrega());
+		System.out.println("A data Final da compra:" + compra.getDataFinal());
+		
+		
+				
+	}
 }
