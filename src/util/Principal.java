@@ -15,8 +15,8 @@ public class Principal {
 		compra.setId(1);
 		compra.setUsuario(null);
 		compra.setData(null);
-		compra.setDataEntrega(null);
-		compra.setDataFinal(null);
+		compra.setDataEntrega(new ImplementandoDatas().dataEntrega());
+		compra.setDataFinal(new ImplementandoDatas().dataAtual());
 		compra.setProdutos(null);
 		compra.setStatus(0);
 		compra.setValor(100);
@@ -43,6 +43,7 @@ public class Principal {
 		produto.setPrecoVen(0);
 		produto.setQntEst(0);
 		produto.setTipoUn(null);
+                produto.setDataDeValidade(new ImplementandoDatas().dataAtual());
 		
 		Usuario usuario = new Usuario();
 		usuario.setLogin(null);
@@ -50,7 +51,7 @@ public class Principal {
 		usuario.setSenha("1234");
 		
 		Venda venda = new Venda();
-		venda.setData(null);
+		venda.setData(new ImplementandoDatas().dataAtual());
 		venda.setId(0);
 		venda.setNomCliente(null);
 		venda.setProdutos(null);

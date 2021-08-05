@@ -1,6 +1,7 @@
 package util;
+import java.util.Date;
 
-public class Produto {
+public class Produto  {
 	    public String nomProd;
 	    public int codBar;
 	    public float precoVen;
@@ -8,6 +9,9 @@ public class Produto {
 	    private int qntEst;
 	    public String tipoUn;
 	    public String categoria;
+            private Date dataDeValidade;
+
+   
 		public String getNomProd() {
 			return nomProd;
 		}
@@ -50,7 +54,18 @@ public class Produto {
 		public void setCategoria(String categoria) {
 			this.categoria = categoria;
 		}
-	    
-	    
-	}
+
+              
+                public Date getDataDeValidade() {
+                    return dataDeValidade;
+                }
+
+                public void setDataDeValidade( Date dataDeValidade) {
+                    this.dataDeValidade = dataDeValidade;
+                   
+                }
+
+  
+
+                    } 
    

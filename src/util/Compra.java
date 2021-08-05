@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.ArrayList;
 
+
 public class Compra {
     private int id;
     private Usuario usuario;
@@ -12,7 +13,7 @@ public class Compra {
     private int status;
     private Date data;   //LocalDateTime
     private Date dataEntrega;
-    private Date dataFinal;
+    private Date dataFinal;  
 	public int getId() {
 		return id;
 	}
@@ -61,6 +62,9 @@ public class Compra {
 	public void setDataFinal(Date dataFinal) {
 		this.dataFinal = dataFinal;
 	}
+
+   
+    
     
     
 }
