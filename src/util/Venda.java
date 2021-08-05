@@ -9,7 +9,7 @@ public class Venda {
     private Usuario usuario;
     private double valor;
     private List<Produto> produtos = new ArrayList<Produto>();
-    private Date data = new Date();
+    private Date data = new Date(); //#####
     private String nomCliente;
 	public int getId() {
 		return id;
