@@ -27,7 +27,7 @@ public class Principal {
 		fornecedor.setCnpj("78923695870/0001-99");
 		fornecedor.setRua(null);
 		fornecedor.setComp(null);
-		fornecedor.setNum(0);
+		fornecedor.setNum(18);
 		fornecedor.setBairro(null);
 		fornecedor.setCidade(null);
 		fornecedor.setEstado(null);
@@ -58,7 +58,7 @@ public class Principal {
 		venda.setUsuario(usuario);
 		venda.setValor(0);
 		
-		System.out.println("O CNPJ do fornecedor é:" + fornecedor.getCnpj());
+		System.out.println("O CNPJ do fornecedor ï¿½:" + fornecedor.getCnpj());
 		System.out.println("A data da compra:" + compra.getData());
 		System.out.println("O usuario da compra:" + compra.getUsuario());
 		System.out.println("A data Entrega da compra:" + compra.getDataEntrega());
