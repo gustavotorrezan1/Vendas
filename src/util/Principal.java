@@ -12,7 +12,7 @@ package util;
 public class Principal {
     public static void main (String[] args) {
 		Compra compra = new Compra();
-		compra.setId(1);
+		compra.setId(2);
 		compra.setUsuario(null);
 		compra.setData(null);
 		compra.setDataEntrega(new ImplementandoDatas().dataEntrega());
