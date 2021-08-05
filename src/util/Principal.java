@@ -24,7 +24,7 @@ public class Principal {
 		Fornecedor fornecedor = new Fornecedor();
 		fornecedor.setId(0);
 		fornecedor.setNome("Joabe");
-		fornecedor.setCnpj(null);
+		fornecedor.setCnpj("78923695870/0001-99");
 		fornecedor.setRua(null);
 		fornecedor.setComp(null);
 		fornecedor.setNum(0);
@@ -58,7 +58,7 @@ public class Principal {
 		venda.setUsuario(usuario);
 		venda.setValor(0);
 		
-		
+		System.out.println("O CNPJ do fornecedor é:" + fornecedor.getCnpj());
 		System.out.println("A data da compra:" + compra.getData());
 		System.out.println("O usuario da compra:" + compra.getUsuario());
 		System.out.println("A data Entrega da compra:" + compra.getDataEntrega());
