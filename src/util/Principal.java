@@ -53,7 +53,7 @@ public class Principal {
 		Venda venda = new Venda();
 		venda.setData(new ImplementandoDatas().dataAtual());
 		venda.setId(0);
-		venda.setNomCliente(null);
+		venda.setNomCliente("Maria");
 		venda.setProdutos(null);
 		venda.setUsuario(usuario);
 		venda.setValor(0);
