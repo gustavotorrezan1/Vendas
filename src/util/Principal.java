@@ -25,29 +25,29 @@ public class Principal {
 		fornecedor.setId(0);
 		fornecedor.setNome("Joabe");
 		fornecedor.setCnpj("78923695870/0001-99");
-		fornecedor.setRua(null);
-		fornecedor.setComp(null);
+		fornecedor.setRua("Maceio");
+		fornecedor.setComp("casa");
 		fornecedor.setNum(18);
-		fornecedor.setBairro(null);
-		fornecedor.setCidade(null);
-		fornecedor.setEstado(null);
-		fornecedor.setCep(null);
-		fornecedor.setTelefone1(null);
-		fornecedor.setTelefone2(null);
+		fornecedor.setBairro("Jurere");
+		fornecedor.setCidade("Florianopolis");
+		fornecedor.setEstado("sc");
+		fornecedor.setCep("88210000");
+		fornecedor.setTelefone1("4898562356");
+		fornecedor.setTelefone2("4898362587");
 		
 		Produto produto = new Produto();
-		produto.setCategoria(null);
-		produto.setCodBar(0);
-		produto.setNomProd(null);
-		produto.setPrecoCus(0);
-		produto.setPrecoVen(0);
-		produto.setQntEst(0);
-		produto.setTipoUn(null);
-                produto.setDataDeValidade(new ImplementandoDatas().dataAtual());
+		produto.setCategoria("cactus suculenta");
+		produto.setCodBar(1);
+		produto.setNomProd("cacto");
+		produto.setPrecoCus(2);
+		produto.setPrecoVen(5);
+		produto.setQntEst(4);
+		produto.setTipoUn("caixa");
+        produto.setDataDeValidade(new ImplementandoDatas().dataAtual());
 		
 		Usuario usuario = new Usuario();
-		usuario.setLogin(null);
-		usuario.setNivPerm(0);
+		usuario.setLogin("Joao");
+		usuario.setNivPerm(1);
 		usuario.setSenha("1234");
 		
 		Venda venda = new Venda();
@@ -58,7 +58,7 @@ public class Principal {
 		venda.setUsuario(usuario);
 		venda.setValor(0);
 		
-		System.out.println("O CNPJ do fornecedor �:" + fornecedor.getCnpj());
+		System.out.println("O CNPJ do fornecedor:" + fornecedor.getCnpj());
 		System.out.println("A data da compra:" + compra.getData());
 		System.out.println("O usuario da compra:" + compra.getUsuario());
 		System.out.println("A data Entrega da compra:" + compra.getDataEntrega());
