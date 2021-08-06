@@ -24,7 +24,7 @@ public class Principal {
 		Fornecedor fornecedor = new Fornecedor();
 		fornecedor.setId(0);
 		fornecedor.setNome("Joabe");
-		fornecedor.setCnpj("78923695870/0001-99");
+		fornecedor.setCnpj("78923695870000199");
 		fornecedor.setRua("Maceio");
 		fornecedor.setComp("casa");
 		fornecedor.setNum(18);
@@ -36,9 +36,9 @@ public class Principal {
 		fornecedor.setTelefone2("4898362587");
 		
 		Produto produto = new Produto();
-		produto.setCategoria("cactus suculenta");
+		produto.setCategoria("planta");
 		produto.setCodBar(1);
-		produto.setNomProd("cacto");
+		produto.setNomProd("cactus");
 		produto.setPrecoCus(2);
 		produto.setPrecoVen(5);
 		produto.setQntEst(4);
@@ -58,11 +58,28 @@ public class Principal {
 		venda.setUsuario(usuario);
 		venda.setValor(0);
 		
-		System.out.println("O CNPJ do fornecedor:" + fornecedor.getCnpj());
-		System.out.println("A data da compra:" + compra.getData());
-		System.out.println("O usuario da compra:" + compra.getUsuario());
-		System.out.println("A data Entrega da compra:" + compra.getDataEntrega());
-		System.out.println("A data Final da compra:" + compra.getDataFinal());
+		System.out.println("ID do fornecedor: " + fornecedor.getId());
+		System.out.println("Nome: " + fornecedor.getNome());
+		System.out.println("CNPJ: " + fornecedor.getCnpj());
+		System.out.println("Rua: " + fornecedor.getRua());
+		System.out.println("Complemento: " + fornecedor.getComp());
+		System.out.println("Número: " + fornecedor.getNum());
+		System.out.println("Bairro: " + fornecedor.getBairro());
+		System.out.println("Cidade: " + fornecedor.getCidade());
+		
+		System.out.println("Categoria: " + produto.getCategoria());
+		System.out.println("Nome: " + produto.getNomProd());
+		System.out.println("Código: " + produto.getCodBar());
+		System.out.println("Custo do produto: " + produto.getPrecoCus());
+		System.out.println("Preço de venda: " + produto.getPrecoVen());
+		System.out.println("Quantidade do estoque: " + produto.getQntEst());
+		
+		
+		
+		System.out.println("Data da compra: " + compra.getData());
+		System.out.println("Usuario: " + compra.getUsuario());
+		System.out.println("Data Entrega da compra: " + compra.getDataEntrega());
+		System.out.println("Data Final da compra: " + compra.getDataFinal());
 		
 		
 				
