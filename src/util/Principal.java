@@ -8,7 +8,7 @@ package util;
 import javax.swing.JOptionPane;
 
 /**
- *
+ Classe main
  * 
  */
 public class Principal {
@@ -26,8 +26,8 @@ public class Principal {
 		compra.setValor(100);
 		compra.setProdutos(null);
 		compra.setStatus(0);
-		compra.setData(new ImplementandoDatas().dataAtual());
-		compra.setDataEntrega(new ImplementandoDatas().dataEntrega());
+		compra.setData(new ImplementandoData().dataAtual());
+		compra.setDataEntrega(new ImplementandoData().dataEntrega());
 						
 		/*Fornecedor fornecedor = new Fornecedor();
 		fornecedor.setId(0);
@@ -73,7 +73,7 @@ public class Principal {
 		usuario.setSenha("1234");
 		
 		Venda venda = new Venda();
-		venda.setData(new ImplementandoDatas().dataAtual());
+		venda.setData(new ImplementandoData().dataAtual());
 		venda.setId(0);
 		venda.setNomCliente("Maria");
 		venda.setProdutos(null);

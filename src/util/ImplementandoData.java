@@ -5,7 +5,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 
-public class ImplementandoDatas extends Datas {
+public class ImplementandoData extends Data {
 
    @Override
     public Date dataAtual() {
