@@ -5,13 +5,22 @@
  */
 package util;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author GustavoTorrezani
  */
 public class Principal {
     public static void main (String[] args) {
-		Compra compra = new Compra();
+		
+    	String login = JOptionPane.showInputDialog("Informe o login");
+    	String senha = JOptionPane.showInputDialog("Informe a senha");
+    	
+    	if(login.equalsIgnoreCase("admin") &&
+    			senha.equalsIgnoreCase("admin")) {
+    	
+    	Compra compra = new Compra();
 		compra.setId(3);
 		compra.setUsuario(null);
 		compra.setData(null);
@@ -84,4 +93,5 @@ public class Principal {
 		
 				
 	}
+    }
 }
