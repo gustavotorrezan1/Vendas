@@ -12,15 +12,12 @@ public class Compra {
     private int status;
     private Date data;   //LocalDateTime
     private Date dataEntrega;
-<<<<<<< HEAD
     private Date dataFinal;  
     
     private List<Produto> produtos = new ArrayList<Produto>();
     
     
-=======
      
->>>>>>> 13f4c07a87285a3928e8b83cc666f2ad3acec22f
 	public int getId() {
 		return id;
 	}
