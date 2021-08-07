@@ -1,8 +1,9 @@
 package util;
 import java.util.Date;
 /*Essa classe produto vai ser usado listas*/
-public class Produto  {
-	    public String nomProd;
+	public class Produto  {
+	    
+		public String nomProd;
 	    public int codBar;
 	    public float precoVen;
 	    private float precoCus;
