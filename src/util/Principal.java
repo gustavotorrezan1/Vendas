@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author GustavoTorrezani
+ * 
  */
 public class Principal {
     public static void main (String[] args) {
@@ -29,10 +29,10 @@ public class Principal {
 		compra.setData(new ImplementandoDatas().dataAtual());
 		compra.setDataEntrega(new ImplementandoDatas().dataEntrega());
 						
-		Fornecedor fornecedor = new Fornecedor();
+		/*Fornecedor fornecedor = new Fornecedor();
 		fornecedor.setId(0);
 		fornecedor.setNome("Joabe");
-		fornecedor.setCnpj("78923695870000199");
+		fornecedor.setCnpjcpf("78923695870000199");
 		fornecedor.setRua("Maceio");
 		fornecedor.setComp("casa");
 		fornecedor.setNum(18);
@@ -41,7 +41,22 @@ public class Principal {
 		fornecedor.setEstado("sc");
 		fornecedor.setCep("88210000");
 		fornecedor.setTelefone1("4898562356");
-		fornecedor.setTelefone2("4898362587");
+		fornecedor.setTelefone2("4898362587");*/
+		
+		Pessoa pessoa = new Pessoa();
+		pessoa.setId(0);
+		pessoa.setNome("Joabe");
+		pessoa.setCnpjcpf("78923695870000199");
+		pessoa.setRua("Maceio");
+		pessoa.setComp("casa");
+		pessoa.setNum(18);
+		pessoa.setBairro("Jurere");
+		pessoa.setCidade("Florianopolis");
+		pessoa.setEstado("sc");
+		pessoa.setCep("88210000");
+		pessoa.setTelefone1("4898562356");
+		pessoa.setTelefone2("4898362587");
+				
 		
 		Produto produto = new Produto();
 		produto.setNomProd("cactus");
@@ -65,14 +80,14 @@ public class Principal {
 		venda.setUsuario(usuario);
 		venda.setValor(0);
 		
-		System.out.println("ID do fornecedor: " + fornecedor.getId());
-		System.out.println("Nome: " + fornecedor.getNome());
-		System.out.println("CNPJ: " + fornecedor.getCnpj());
-		System.out.println("Rua: " + fornecedor.getRua());
-		System.out.println("Complemento: " + fornecedor.getComp());
-		System.out.println("Número: " + fornecedor.getNum());
-		System.out.println("Bairro: " + fornecedor.getBairro());
-		System.out.println("Cidade: " + fornecedor.getCidade());
+		System.out.println("ID do fornecedor: " + pessoa.getId());
+		System.out.println("Nome: " + pessoa.getNome());
+		System.out.println("CNPJ: " + pessoa.getCnpjcpf());
+		System.out.println("Rua: " + pessoa.getRua());
+		System.out.println("Complemento: " + pessoa.getComp());
+		System.out.println("Número: " + pessoa.getNum());
+		System.out.println("Bairro: " + pessoa.getBairro());
+		System.out.println("Cidade: " + pessoa.getCidade());
 		
 		System.out.println("Categoria: " + produto.getCategoria());
 		System.out.println("Nome: " + produto.getNomProd());
