@@ -13,7 +13,7 @@ public class Compra {
     private int status;
     private Date data;   //LocalDateTime
     private Date dataEntrega;
-    private Date dataFinal;  
+     
 	public int getId() {
 		return id;
 	}
@@ -56,13 +56,7 @@ public class Compra {
 	public void setDataEntrega(Date dataEntrega) {
 		this.dataEntrega = dataEntrega;
 	}
-	public Date getDataFinal() {
-		return dataFinal;
-	}
-	public void setDataFinal(Date dataFinal) {
-		this.dataFinal = dataFinal;
-	}
-
+	
    
     
     
