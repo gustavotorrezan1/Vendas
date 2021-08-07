@@ -9,14 +9,10 @@ public class Compra {
     private int id;
     private Usuario usuario;
     private double valor;
+    private List<Produto> produtos = new ArrayList<Produto>();
     private int status;
     private Date data;   //LocalDateTime
     private Date dataEntrega;
-    private Date dataFinal;  
-    
-    private List<Produto> produtos = new ArrayList<Produto>();
-    
-    
      
 	public int getId() {
 		return id;
@@ -61,8 +57,6 @@ public class Compra {
 		this.dataEntrega = dataEntrega;
 	}
 	
-   
-    
     
     
 }

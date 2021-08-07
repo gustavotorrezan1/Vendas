@@ -1,5 +1,5 @@
 package util;
-import java.util.Date;
+
 /*Essa classe produto vai ser usado listas*/
 	public class Produto  {
 	    
@@ -10,7 +10,6 @@ import java.util.Date;
 	    private int qntEst;
 	    public String tipoUn;
 	    public String categoria;
-            private Date dataDeValidade;
 
    
 		public String getNomProd() {
@@ -56,17 +55,8 @@ import java.util.Date;
 			this.categoria = categoria;
 		}
 
-              
-                public Date getDataDeValidade() {
-                    return dataDeValidade;
-                }
-
-                public void setDataDeValidade( Date dataDeValidade) {
-                    this.dataDeValidade = dataDeValidade;
-                   
-                }
 
   
 
-                    } 
+} 
    

@@ -44,14 +44,13 @@ public class Principal {
 		fornecedor.setTelefone2("4898362587");
 		
 		Produto produto = new Produto();
-		produto.setCategoria("planta");
-		produto.setCodBar(1);
 		produto.setNomProd("cactus");
-		produto.setPrecoCus(2);
+		produto.setCodBar(1);
 		produto.setPrecoVen(5);
+		produto.setPrecoCus(2);
 		produto.setQntEst(4);
 		produto.setTipoUn("caixa");
-        produto.setDataDeValidade(new ImplementandoDatas().dataAtual());
+		produto.setCategoria("planta");
 		
 		Usuario usuario = new Usuario();
 		usuario.setLogin("Joao");
