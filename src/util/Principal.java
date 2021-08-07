@@ -23,13 +23,12 @@ public class Principal {
     	Compra compra = new Compra();
 		compra.setId(3);
 		compra.setUsuario(null);
-		compra.setData(null);
-		compra.setDataEntrega(new ImplementandoDatas().dataEntrega());
-		compra.setDataFinal(new ImplementandoDatas().dataAtual());
+		compra.setValor(100);
 		compra.setProdutos(null);
 		compra.setStatus(0);
-		compra.setValor(100);
-				
+		compra.setData(new ImplementandoDatas().dataAtual());
+		compra.setDataEntrega(new ImplementandoDatas().dataEntrega());
+						
 		Fornecedor fornecedor = new Fornecedor();
 		fornecedor.setId(0);
 		fornecedor.setNome("Joabe");
@@ -82,13 +81,11 @@ public class Principal {
 		System.out.println("Custo do produto: " + produto.getPrecoCus());
 		System.out.println("Preço de venda: " + produto.getPrecoVen());
 		System.out.println("Quantidade do estoque: " + produto.getQntEst());
-		
-		
-		
+					
 		System.out.println("Data da compra: " + compra.getData());
 		System.out.println("Usuario: " + compra.getUsuario());
 		System.out.println("Data Entrega da compra: " + compra.getDataEntrega());
-		System.out.println("Data Final da compra: " + compra.getDataFinal());
+		
 		
 		
 				
