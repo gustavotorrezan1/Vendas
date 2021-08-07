@@ -5,6 +5,8 @@ public class Usuario {
 	protected String login;
     protected String senha;
     protected int nivPerm;
+    
+    
 	public String getLogin() {
 		return login;
 	}

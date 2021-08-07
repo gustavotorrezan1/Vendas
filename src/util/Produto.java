@@ -11,7 +11,19 @@ package util;
 	    public String tipoUn;
 	    public String categoria;
 
-   
+	    
+		/*public Produto(String nomProd, int codBar, float precoVen, float precoCus, int qntEst, String tipoUn,
+				String categoria) {
+			super();
+			this.nomProd = nomProd;
+			this.codBar = codBar;
+			this.precoVen = precoVen;
+			this.precoCus = precoCus;
+			this.qntEst = qntEst;
+			this.tipoUn = tipoUn;
+			this.categoria = categoria;
+		}*/
+	    
 		public String getNomProd() {
 			return nomProd;
 		}

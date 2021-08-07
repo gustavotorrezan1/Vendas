@@ -18,10 +18,10 @@ public class Principal {
     	String senha = JOptionPane.showInputDialog("Informe a senha");
     	
     	if(login.equalsIgnoreCase("admin") &&
-    			senha.equalsIgnoreCase("admin")) {
+    			senha.equalsIgnoreCase("admin")){
     	
     	Compra compra = new Compra();
-		compra.setId(3);
+		compra.setId(3); 
 		compra.setUsuario(null);
 		compra.setValor(100);
 		compra.setProdutos(null);
@@ -29,33 +29,33 @@ public class Principal {
 		compra.setData(new ImplementandoData().dataAtual());
 		compra.setDataEntrega(new ImplementandoData().dataEntrega());
 						
-		/*Fornecedor fornecedor = new Fornecedor();
-		fornecedor.setId(0);
-		fornecedor.setNome("Joabe");
-		fornecedor.setCnpjcpf("78923695870000199");
-		fornecedor.setRua("Maceio");
-		fornecedor.setComp("casa");
-		fornecedor.setNum(18);
-		fornecedor.setBairro("Jurere");
-		fornecedor.setCidade("Florianopolis");
-		fornecedor.setEstado("sc");
-		fornecedor.setCep("88210000");
-		fornecedor.setTelefone1("4898562356");
-		fornecedor.setTelefone2("4898362587");*/
+		String idPessoa = JOptionPane.showInputDialog("Qual o ID da pessoa?");
+		String nome = JOptionPane.showInputDialog("Qual o nome da pessoa?");
+		String cnpjCpf = JOptionPane.showInputDialog("Qual o CNPJ/CPF?");
+		String rua = JOptionPane.showInputDialog("Qual a rua?");
+		String comp = JOptionPane.showInputDialog("Qual o complem?");
+		String num = JOptionPane.showInputDialog("Qual o num?");
+		String bairro = JOptionPane.showInputDialog("Qual bairro?");
+		String cidade = JOptionPane.showInputDialog("Qual cidade?");
+		String estado = JOptionPane.showInputDialog("Qual estado?");
+		String cep = JOptionPane.showInputDialog("Qual cep?");
+		String telef1 = JOptionPane.showInputDialog("Qual telef1?");
+		String telef2 = JOptionPane.showInputDialog("Qual telef2?");
 		
 		Pessoa pessoa = new Pessoa();
-		pessoa.setId(0);
-		pessoa.setNome("Joabe");
-		pessoa.setCnpjcpf("78923695870000199");
-		pessoa.setRua("Maceio");
-		pessoa.setComp("casa");
-		pessoa.setNum(18);
-		pessoa.setBairro("Jurere");
-		pessoa.setCidade("Florianopolis");
-		pessoa.setEstado("sc");
-		pessoa.setCep("88210000");
-		pessoa.setTelefone1("4898562356");
-		pessoa.setTelefone2("4898362587");
+		
+		pessoa.setId(Integer.valueOf(idPessoa));
+		pessoa.setNome(nome);
+		pessoa.setCnpjcpf(cnpjCpf);
+		pessoa.setRua(rua);
+		pessoa.setComp(comp);
+		pessoa.setNum(Integer.valueOf(num));
+		pessoa.setBairro(bairro);
+		pessoa.setCidade(cidade);
+		pessoa.setEstado(estado);
+		pessoa.setCep(cep);
+		pessoa.setTelefone1(telef1);
+		pessoa.setTelefone2(telef2);
 				
 		
 		Produto produto = new Produto();
@@ -67,10 +67,12 @@ public class Principal {
 		produto.setTipoUn("caixa");
 		produto.setCategoria("planta");
 		
+		
 		Usuario usuario = new Usuario();
 		usuario.setLogin("Joao");
 		usuario.setNivPerm(1);
 		usuario.setSenha("1234");
+		
 		
 		Venda venda = new Venda();
 		venda.setData(new ImplementandoData().dataAtual());
