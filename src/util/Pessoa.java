@@ -23,6 +23,7 @@ public class Pessoa {
 	protected String bairro;
 	protected String cidade;
 	protected String estado;
+	
 	public String getNome() {
 		return nome;
 	}
