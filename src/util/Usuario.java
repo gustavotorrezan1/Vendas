@@ -25,6 +25,11 @@ public class Usuario {
 	public void setNivPerm(int nivPerm) {
 		this.nivPerm = nivPerm;
 	}
+	
+	@Override
+	public String toString() {
+		return "Usuario [login=" + login + ", senha=" + senha + ", nivPerm=" + nivPerm + "]";
+	}
     
     
 }

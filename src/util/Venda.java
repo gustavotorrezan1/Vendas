@@ -47,6 +47,12 @@ public class Venda {
 	public void setNomCliente(String nomCliente) {
 		this.nomCliente = nomCliente;
 	}
+	
+	@Override
+	public String toString() {
+		return "Venda [id=" + id + ", usuario=" + usuario + ", valor=" + valor + ", produtos=" + produtos + ", data="
+				+ data + ", nomCliente=" + nomCliente + "]";
+	}
     
     
     

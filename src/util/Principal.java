@@ -39,7 +39,7 @@ public class Principal {
 		
 		
 						
-		String idPessoa = JOptionPane.showInputDialog("Qual o ID da pessoa?");
+		/*String idPessoa = JOptionPane.showInputDialog("Qual o ID da pessoa?");
 		String nome = JOptionPane.showInputDialog("Qual o nome da pessoa?");
 		String cnpjCpf = JOptionPane.showInputDialog("Qual o CNPJ/CPF?");
 		String rua = JOptionPane.showInputDialog("Qual a rua?");
@@ -65,7 +65,7 @@ public class Principal {
 		pessoa.setEstado(estado);
 		pessoa.setCep(cep);
 		pessoa.setTelefone1(telef1);
-		pessoa.setTelefone2(telef2);
+		pessoa.setTelefone2(telef2);*/
 				
 		
 		Produto produto = new Produto();
@@ -92,14 +92,14 @@ public class Principal {
 		venda.setUsuario(usuario);
 		venda.setValor(0);
 		
-		System.out.println("ID do fornecedor: " + pessoa.getId());
+		/*System.out.println("ID do fornecedor: " + pessoa.getId());
 		System.out.println("Nome: " + pessoa.getNome());
 		System.out.println("CNPJ: " + pessoa.getCnpjcpf());
 		System.out.println("Rua: " + pessoa.getRua());
 		System.out.println("Complemento: " + pessoa.getComp());
 		System.out.println("Número: " + pessoa.getNum());
 		System.out.println("Bairro: " + pessoa.getBairro());
-		System.out.println("Cidade: " + pessoa.getCidade());
+		System.out.println("Cidade: " + pessoa.getCidade());*/
 		
 		System.out.println("Categoria: " + produto.getCategoria());
 		System.out.println("Nome: " + produto.getNomProd());

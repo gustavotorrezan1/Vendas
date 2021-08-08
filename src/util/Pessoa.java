@@ -97,5 +97,13 @@ public class Pessoa {
 	public void setEstado(String estado) {
 		this.estado = estado;
 	}
+	
+	@Override
+	public String toString() {
+		return "Pessoa [nome=" + nome + ", id=" + id + ", cnpjcpf=" + cnpjcpf + ", telefone1=" + telefone1
+				+ ", telefone2=" + telefone2 + ", cep=" + cep + ", num=" + num + ", rua=" + rua + ", comp=" + comp
+				+ ", bairro=" + bairro + ", cidade=" + cidade + ", estado=" + estado + "]";
+	}
        
+	
 }

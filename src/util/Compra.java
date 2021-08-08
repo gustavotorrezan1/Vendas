@@ -57,6 +57,13 @@ public class Compra {
 		this.dataEntrega = dataEntrega;
 	}
 	
+	
+	@Override
+	public String toString() {
+		return "Compra [id=" + id + ", usuario=" + usuario + ", valor=" + valor + ", produtos=" + produtos + ", status="
+				+ status + ", data=" + data + ", dataEntrega=" + dataEntrega + "]";
+	}
+	
     
     
 }

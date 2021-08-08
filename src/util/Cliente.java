@@ -17,5 +17,10 @@ public class Cliente extends Pessoa {
 		this.pontos = pontos;
 	}
 	
+	@Override
+	public String toString() {
+		return "Cliente [cupomDesconto=" + cupomDesconto + ", pontos=" + pontos + "]";
+	}
+	
 	
 }
