@@ -1,6 +1,6 @@
 package util;
 
-public class Usuario {
+public class Usuario extends Pessoa {
 
 	protected String login;
     protected String senha;
