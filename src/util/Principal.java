@@ -14,26 +14,36 @@ import javax.swing.JOptionPane;
 public class Principal {
     public static void main (String[] args) {
 		
-    	String login = JOptionPane.showInputDialog("Informe o login");
+    	/*String login = JOptionPane.showInputDialog("Informe o login");
     	String senha = JOptionPane.showInputDialog("Informe a senha");
     	
     	if(login.equalsIgnoreCase("admin") &&
-    			senha.equalsIgnoreCase("admin")){
+    			senha.equalsIgnoreCase("admin"))
+    	{aqui dentro entra as classes}*/
     	
+    	/*String idCompra = JOptionPane.showInputDialog("Id compra?");
+    	/*String usuarioC = JOptionPane.showInputDialog("Nome vendedor?");PUXAR USUARIO
+    	/*String valor = JOptionPane.showInputDialog("Qual o valor?");
+    	/*String produtoC = JOptionPane.showInputDialog("Qual o produto?");PUXAR PRODUTO
+    	/*String status = JOptionPane.showInputDialog("Qual o status?");VERIFICAR NECESSIDADE
+    	
+    		
     	Compra compra = new Compra();
-		compra.setId(3); 
-		compra.setUsuario(null);
-		compra.setValor(100);
-		compra.setProdutos(null);
-		compra.setStatus(0);
+		compra.setId(Integer.valueOf(idCompra)); 
+		/*compra.setUsuario(Integer.valueOf(usuarioC));*//*verificar usuario*/
+		/*compra.setValor(Integer.valueOf(valor));
+		/*compra.setProdutos(produtoC);*//*verificar produto*/
+		/*compra.setStatus (Integer.valueOf(status));
 		compra.setData(new ImplementandoData().dataAtual());
-		compra.setDataEntrega(new ImplementandoData().dataEntrega());
+		compra.setDataEntrega(new ImplementandoData().dataEntrega());*/
+		
+		
 						
 		String idPessoa = JOptionPane.showInputDialog("Qual o ID da pessoa?");
 		String nome = JOptionPane.showInputDialog("Qual o nome da pessoa?");
 		String cnpjCpf = JOptionPane.showInputDialog("Qual o CNPJ/CPF?");
 		String rua = JOptionPane.showInputDialog("Qual a rua?");
-		String comp = JOptionPane.showInputDialog("Qual o complem?");
+		String comp = JOptionPane.showInputDialog("Qual o complemento?");
 		String num = JOptionPane.showInputDialog("Qual o num?");
 		String bairro = JOptionPane.showInputDialog("Qual bairro?");
 		String cidade = JOptionPane.showInputDialog("Qual cidade?");
@@ -98,13 +108,12 @@ public class Principal {
 		System.out.println("Preço de venda: " + produto.getPrecoVen());
 		System.out.println("Quantidade do estoque: " + produto.getQntEst());
 					
-		System.out.println("Data da compra: " + compra.getData());
+		/*System.out.println("Data da compra: " + compra.getData());
 		System.out.println("Usuario: " + compra.getUsuario());
-		System.out.println("Data Entrega da compra: " + compra.getDataEntrega());
+		System.out.println("Data Entrega da compra: " + compra.getDataEntrega());*/
 		
-		
-		
+			
 				
 	}
     }
-}
+
