@@ -18,8 +18,12 @@ public class Principal {
     	String senha = JOptionPane.showInputDialog("Informe a senha");
     	
     	if(login.equalsIgnoreCase("admin") &&
-    			senha.equalsIgnoreCase("admin"))
-    	{aqui dentro entra as classes}*/
+    			senha.equalsIgnoreCase("admin")){};*/
+    	
+    	/*{aqui dentro entra as classes}*/
+    	
+    	
+    	
     	
     	/*String idCompra = JOptionPane.showInputDialog("Id compra?");
     	/*String usuarioC = JOptionPane.showInputDialog("Nome vendedor?");PUXAR USUARIO
@@ -36,11 +40,13 @@ public class Principal {
 		/*compra.setStatus (Integer.valueOf(status));
 		compra.setData(new ImplementandoData().dataAtual());
 		compra.setDataEntrega(new ImplementandoData().dataEntrega());*/
+    	
+    	
 		
 		
 						
-		/*String idPessoa = JOptionPane.showInputDialog("Qual o ID da pessoa?");
-		String nome = JOptionPane.showInputDialog("Qual o nome da pessoa?");
+		String idPessoa = JOptionPane.showInputDialog("Qual o ID do cliente/fornecedor?");
+		String nome = JOptionPane.showInputDialog("Qual o nome do cliente/fornecedor?");
 		String cnpjCpf = JOptionPane.showInputDialog("Qual o CNPJ/CPF?");
 		String rua = JOptionPane.showInputDialog("Qual a rua?");
 		String comp = JOptionPane.showInputDialog("Qual o complemento?");
@@ -65,17 +71,22 @@ public class Principal {
 		pessoa.setEstado(estado);
 		pessoa.setCep(cep);
 		pessoa.setTelefone1(telef1);
-		pessoa.setTelefone2(telef2);*/
+		pessoa.setTelefone2(telef2);
+		
+		/*String cupom = JOptionPane.showInputDialog("Qual o nome do cliente/fornecedor?");
+		String ponto = JOptionPane.showInputDialog("Qual o CNPJ/CPF?");*/
+		
+		
 				
 		
-		/*Produto produto1 = new Produto("casctus", 1, 5, 2, 4, "unidade", "planta");
-		/*Produto produto2 = new Produto("vaso", 2, 5, 2, 4, "unidade","utensilio");
-	 	/*Produto produto3 = new Produto("grama", 3, 5, 2, 4, "metro", "planta");
-		/*Produto produto4 = new Produto("bacia", 4, 5, 2, 4, "unidade", "planta"); 
-		/*Produto produto5 = new Produto("rosa", 5, 5, 2, 4, "unidade", "planta");
-		/*Produto produto6 = new Produto("enchada", 6, 5, 2, 4, "unidade", "utensilio");
-		/*Produto produto7 = new Produto("rosa do deserto", 7, 5, 2, 4, "unidade", "planta);
-		/*Produto produto8 = new Produto("regador", 8, 5, 2, 4, "unidade", "utensilio"); 
+		/*Produto produto1 = new Produto("casctus", 1, 5.00, 2.00, 4, "unidade", "planta");
+		/*Produto produto2 = new Produto("vaso", 2, 5.00, 2.00, 4, "unidade","utensilio");
+	 	/*Produto produto3 = new Produto("grama", 3, 5.00, 2.00, 4, "metro", "planta");
+		/*Produto produto4 = new Produto("bacia", 4, 5.00, 2.00, 4, "unidade", "planta"); 
+		/*Produto produto5 = new Produto("rosa", 5, 5.00, 2.00, 4, "unidade", "planta");
+		/*Produto produto6 = new Produto("enchada", 6, 5.00, 2.00, 4, "unidade", "utensilio");
+		/*Produto produto7 = new Produto("rosa do deserto", 7, 5.00, 2.00, 4, "unidade", "planta);
+		/*Produto produto8 = new Produto("regador", 8, 5.00, 2.00, 4, "unidade", "utensilio"); 
 		  
 		List<produto> produtos = new ArrayList<produto>();
 		
@@ -91,9 +102,7 @@ public class Principal {
 		System.out.println("Produto: " + (produtos));
 		 */
 		 
-		
-		 
-		 
+				 
     	/*Produto produto = new Produto(); 
 		produto.setNomProd("cactus");
 		produto.setCodBar(1);
@@ -118,14 +127,14 @@ public class Principal {
 		venda.setUsuario(usuario);
 		venda.setValor(0);
 		
-		/*System.out.println("ID do fornecedor: " + pessoa.getId());
+		System.out.println("ID do fornecedor: " + pessoa.getId());
 		System.out.println("Nome: " + pessoa.getNome());
 		System.out.println("CNPJ: " + pessoa.getCnpjcpf());
 		System.out.println("Rua: " + pessoa.getRua());
 		System.out.println("Complemento: " + pessoa.getComp());
 		System.out.println("Número: " + pessoa.getNum());
 		System.out.println("Bairro: " + pessoa.getBairro());
-		System.out.println("Cidade: " + pessoa.getCidade());*/
+		System.out.println("Cidade: " + pessoa.getCidade());
 		
 		/*System.out.println("Categoria: " + produto.getCategoria());
 		System.out.println("Nome: " + produto.getNomProd());
@@ -142,4 +151,5 @@ public class Principal {
 				
 	}
     }
+
 
