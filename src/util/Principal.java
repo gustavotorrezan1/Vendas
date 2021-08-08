@@ -68,14 +68,40 @@ public class Principal {
 		pessoa.setTelefone2(telef2);*/
 				
 		
-		Produto produto = new Produto();
+		/*Produto produto1 = new Produto("casctus", 1, 5, 2, 4, "unidade", "planta");
+		/*Produto produto2 = new Produto("vaso", 2, 5, 2, 4, "unidade","utensilio");
+	 	/*Produto produto3 = new Produto("grama", 3, 5, 2, 4, "metro", "planta");
+		/*Produto produto4 = new Produto("bacia", 4, 5, 2, 4, "unidade", "planta"); 
+		/*Produto produto5 = new Produto("rosa", 5, 5, 2, 4, "unidade", "planta");
+		/*Produto produto6 = new Produto("enchada", 6, 5, 2, 4, "unidade", "utensilio");
+		/*Produto produto7 = new Produto("rosa do deserto", 7, 5, 2, 4, "unidade", "planta);
+		/*Produto produto8 = new Produto("regador", 8, 5, 2, 4, "unidade", "utensilio"); 
+		  
+		List<produto> produtos = new ArrayList<produto>();
+		
+		produtos.add(produto1);
+		produtos.add(produto2);
+		produtos.add(produto3);
+		produtos.add(produto4);
+		produtos.add(produto5);
+		produtos.add(produto6);
+		produtos.add(produto7);
+		produtos.add(produto8);
+		
+		System.out.println("Produto: " + (produtos));
+		 */
+		 
+		
+		 
+		 
+    	/*Produto produto = new Produto(); 
 		produto.setNomProd("cactus");
 		produto.setCodBar(1);
 		produto.setPrecoVen(5);
 		produto.setPrecoCus(2);
 		produto.setQntEst(4);
 		produto.setTipoUn("caixa");
-		produto.setCategoria("planta");
+		produto.setCategoria("planta");*/
 		
 		
 		Usuario usuario = new Usuario();
@@ -101,12 +127,12 @@ public class Principal {
 		System.out.println("Bairro: " + pessoa.getBairro());
 		System.out.println("Cidade: " + pessoa.getCidade());*/
 		
-		System.out.println("Categoria: " + produto.getCategoria());
+		/*System.out.println("Categoria: " + produto.getCategoria());
 		System.out.println("Nome: " + produto.getNomProd());
 		System.out.println("Código: " + produto.getCodBar());
 		System.out.println("Custo do produto: " + produto.getPrecoCus());
 		System.out.println("Preço de venda: " + produto.getPrecoVen());
-		System.out.println("Quantidade do estoque: " + produto.getQntEst());
+		System.out.println("Quantidade do estoque: " + produto.getQntEst());*/
 					
 		/*System.out.println("Data da compra: " + compra.getData());
 		System.out.println("Usuario: " + compra.getUsuario());
