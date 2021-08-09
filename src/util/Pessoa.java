@@ -9,7 +9,7 @@ package util;
  *
  * @author GustavoTorrezani
  */
-/*Aplicação herança classe pessoa se extende para cliente, fornecedor e usuario*/
+/*Aplicaï¿½ï¿½o heranï¿½a classe pessoa se extende para cliente, fornecedor e usuario*/
 public class Pessoa {
 	protected String nome;
 	protected int id;
