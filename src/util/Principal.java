@@ -5,6 +5,8 @@
  */
 package util;
 
+import java.util.ArrayList;
+
 import javax.swing.JOptionPane;
 
 /**
@@ -25,26 +27,25 @@ public class Principal {
     	
     	
     	
-    	/*String idCompra = JOptionPane.showInputDialog("Id compra?");
-    	/*String usuarioC = JOptionPane.showInputDialog("Nome vendedor?");PUXAR USUARIO
-    	/*String valor = JOptionPane.showInputDialog("Qual o valor?");
-    	/*String produtoC = JOptionPane.showInputDialog("Qual o produto?");PUXAR PRODUTO
-    	/*String status = JOptionPane.showInputDialog("Qual o status?");VERIFICAR NECESSIDADE
-    	
+    	String idCompra = JOptionPane.showInputDialog("Id compra?");
+    	String valor = JOptionPane.showInputDialog("Qual o valor?");
+    	    	
     		
     	Compra compra = new Compra();
 		compra.setId(Integer.valueOf(idCompra)); 
-		/*compra.setUsuario(Integer.valueOf(usuarioC));*//*verificar usuario*/
-		/*compra.setValor(Integer.valueOf(valor));
-		/*compra.setProdutos(produtoC);*//*verificar produto*/
-		/*compra.setStatus (Integer.valueOf(status));
+		compra.setValor(Integer.valueOf(valor));
 		compra.setData(new ImplementandoData().dataAtual());
-		compra.setDataEntrega(new ImplementandoData().dataEntrega());*/
-    	
-    	
+		compra.setDataEntrega(new ImplementandoData().dataEntrega());
 		
-		
-						
+		Venda venda = new Venda();
+		venda.setData(new ImplementandoData().dataAtual());
+		venda.setId(0);
+		venda.setNomCliente("Maria");
+		venda.setProdutos(null);
+		//venda.setUsuario(usuario);
+		venda.setValor(0);
+    	
+    							
 		String idPessoa = JOptionPane.showInputDialog("Qual o ID do cliente/fornecedor?");
 		String nome = JOptionPane.showInputDialog("Qual o nome do cliente/fornecedor?");
 		String cnpjCpf = JOptionPane.showInputDialog("Qual o CNPJ/CPF?");
@@ -73,44 +74,23 @@ public class Principal {
 		pessoa.setTelefone1(telef1);
 		pessoa.setTelefone2(telef2);
 		
-		/*String cupomDesconto = JOptionPane.showInputDialog("Qual ?");
-		String ponto = JOptionPane.showInputDialog("Qual ?");*/
-		
-		
 				
+		String cupomDesconto = JOptionPane.showInputDialog("Qual ?");
+		String ponto = JOptionPane.showInputDialog("Qual ?");
 		
-		/*Produto produto1 = new Produto("casctus", 1, 5.00, 2.00, 4, "unidade", "planta");
-		/*Produto produto2 = new Produto("vaso", 2, 5.00, 2.00, 4, "unidade","utensilio");
-	 	/*Produto produto3 = new Produto("grama", 3, 5.00, 2.00, 4, "metro", "planta");
-		/*Produto produto4 = new Produto("bacia", 4, 5.00, 2.00, 4, "unidade", "planta"); 
-		/*Produto produto5 = new Produto("rosa", 5, 5.00, 2.00, 4, "unidade", "planta");
-		/*Produto produto6 = new Produto("enchada", 6, 5.00, 2.00, 4, "unidade", "utensilio");
-		/*Produto produto7 = new Produto("rosa do deserto", 7, 5.00, 2.00, 4, "unidade", "planta);
-		/*Produto produto8 = new Produto("regador", 8, 5.00, 2.00, 4, "unidade", "utensilio"); 
-		  
-		List<produto> produtos = new ArrayList<produto>();
-		
-		produtos.add(produto1);
-		produtos.add(produto2);
-		produtos.add(produto3);
-		produtos.add(produto4);
-		produtos.add(produto5);
-		produtos.add(produto6);
-		produtos.add(produto7);
-		produtos.add(produto8);
-		
-		System.out.println("Produto: " + (produtos));
-		 */
-		 
-				 
-    	/*Produto produto = new Produto(); 
+		Cliente cliente = new Cliente();
+		cliente.setCupomDesconto(Integer.valueOf(cupomDesconto));
+		cliente.setPontos(Integer.valueOf(ponto));
+				
+					 
+    	Produto produto = new Produto("cactus", 1, 5, 2, 4, "caixa", "planta"); 
 		produto.setNomProd("cactus");
 		produto.setCodBar(1);
 		produto.setPrecoVen(5);
 		produto.setPrecoCus(2);
 		produto.setQntEst(4);
 		produto.setTipoUn("caixa");
-		produto.setCategoria("planta");*/
+		produto.setCategoria("planta");
 		
 		
 		Usuario usuario = new Usuario();
@@ -118,16 +98,7 @@ public class Principal {
 		usuario.setNivPerm(1);
 		usuario.setSenha("1234");
 		
-		
-		Venda venda = new Venda();
-		venda.setData(new ImplementandoData().dataAtual());
-		venda.setId(0);
-		venda.setNomCliente("Maria");
-		venda.setProdutos(null);
-		venda.setUsuario(usuario);
-		venda.setValor(0);
-		
-		
+				
 		System.out.println("ID do fornecedor: " + pessoa.getId());
 		System.out.println("Nome: " + pessoa.getNome());
 		System.out.println("CNPJ: " + pessoa.getCnpjcpf());
@@ -137,16 +108,18 @@ public class Principal {
 		System.out.println("Bairro: " + pessoa.getBairro());
 		System.out.println("Cidade: " + pessoa.getCidade());
 		
-		/*System.out.println("Categoria: " + produto.getCategoria());
+		System.out.println("Categoria: " + produto.getCategoria());
 		System.out.println("Nome: " + produto.getNomProd());
 		System.out.println("Código: " + produto.getCodBar());
 		System.out.println("Custo do produto: " + produto.getPrecoCus());
 		System.out.println("Preço de venda: " + produto.getPrecoVen());
-		System.out.println("Quantidade do estoque: " + produto.getQntEst());*/
+		System.out.println("Quantidade do estoque: " + produto.getQntEst());
 					
-		/*System.out.println("Data da compra: " + compra.getData());
-		System.out.println("Usuario: " + compra.getUsuario());
-		System.out.println("Data Entrega da compra: " + compra.getDataEntrega());*/
+		System.out.println("Data da compra: " + compra.getData());
+		System.out.println("Data Entrega da compra: " + compra.getDataEntrega());
+		System.out.println("Data da compra: " + compra.getData());
+		System.out.println("Data Entrega da compra: " + compra.getDataEntrega());
+		
 		
 			
 				

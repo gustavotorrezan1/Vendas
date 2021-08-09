@@ -9,7 +9,7 @@ public class Compra {
     private int id;
     private Usuario usuario;
     private double valor;
-    private List<Produto> produtos = new ArrayList<Produto>();
+    private ArrayList<Produto> produtos = new ArrayList<Produto>();
     private int status;
     private Date data;   //LocalDateTime
     private Date dataEntrega;
@@ -35,9 +35,7 @@ public class Compra {
 	public List<Produto> getProdutos() {
 		return produtos;
 	}
-	public void setProdutos(List<Produto> produtos) {
-		this.produtos = produtos;
-	}
+		
 	public int getStatus() {
 		return status;
 	}

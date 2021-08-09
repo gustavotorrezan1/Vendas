@@ -14,13 +14,13 @@ package util;
 
 	    
 	    
-		public Produto(String nomProd, int codBar, float precoVen, float precoCus, int qntEst, String tipoUn,
+		public Produto(String nomProd, int codBar, double d, double e, int qntEst, String tipoUn,
 				String categoria) {
 			super();
 			this.nomProd = nomProd;
 			this.codBar = codBar;
-			this.precoVen = precoVen;
-			this.precoCus = precoCus;
+			this.precoVen = (float) d;
+			this.precoCus = (float) e;
 			this.qntEst = qntEst;
 			this.tipoUn = tipoUn;
 			this.categoria = categoria;
