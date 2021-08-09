@@ -73,8 +73,8 @@ public class Principal {
 		pessoa.setTelefone1(telef1);
 		pessoa.setTelefone2(telef2);
 		
-		/*String cupom = JOptionPane.showInputDialog("Qual o nome do cliente/fornecedor?");
-		String ponto = JOptionPane.showInputDialog("Qual o CNPJ/CPF?");*/
+		/*String cupomDesconto = JOptionPane.showInputDialog("Qual ?");
+		String ponto = JOptionPane.showInputDialog("Qual ?");*/
 		
 		
 				
@@ -126,6 +126,7 @@ public class Principal {
 		venda.setProdutos(null);
 		venda.setUsuario(usuario);
 		venda.setValor(0);
+		
 		
 		System.out.println("ID do fornecedor: " + pessoa.getId());
 		System.out.println("Nome: " + pessoa.getNome());
