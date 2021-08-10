@@ -122,7 +122,7 @@ public class Principal {
             venda.setNomCliente(login);
             venda.setProdutos( new Produtos().listaProdutos());
     		
-            System.out.println("----------------------DADOS DA VENDA--------------------------");
+            System.out.println("-----------------------DADOS DA VENDA---------------------------");
             
                 float somaValor2 = 0;
                
