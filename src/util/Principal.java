@@ -26,24 +26,38 @@ public class Principal {
     			senha.equalsIgnoreCase("admin")){
     	
     	String escolha = JOptionPane.showInputDialog("Digite: \n1 - para COMPRA \n2 - para VENDA");
-        if(escolha.equalsIgnoreCase("1")) {
-        	
+       
+    	if(escolha.equalsIgnoreCase("1")) {
+    		
         	// Compra
-        	String idCompra = JOptionPane.showInputDialog("Id compra?");
-        	String valor = JOptionPane.showInputDialog("Qual o valor?");
-        	Compra compra = new Compra();
+        	String idCompra = JOptionPane.showInputDialog("Id Compra?");
+        	String valor = JOptionPane.showInputDialog("Qual o valor?");    		
+    		Venda compra = new Venda();
     		compra.setId(Integer.valueOf(idCompra)); 
     		compra.setValor(Integer.valueOf(valor));
+    		compra.setNomCliente(login);
+    		compra.setProdutos( new Produtos().listaProdutos());
     		compra.setData(new ImplementandoData().dataAtual());
-    		compra.setDataEntrega(new ImplementandoData().dataEntrega());
-    		
+    					
+    		System.out.println("\"----------------------DADOS DA COMPRA--------------------------\"");
+                float somaValor1 = 0;
+               
+                System.out.println("PRODUTOS E QUANTIDADES ");
+                 
+                for (Produto x : compra.getProdutos()) {
+                    JOptionPane. showInputDialog(x.nomProd);
+                    String quant = JOptionPane.showInputDialog("quantidade?");
+                    System.out.println( x.nomProd + " quantidade = " + quant );
+                    somaValor1 += x.precoVen;
+                }
+                  
     		// Fornecedor						
     		String idPessoa = JOptionPane.showInputDialog("Qual o ID do fornecedor?");
     		String nome = JOptionPane.showInputDialog("Qual o nome do fornecedor?");
     		String cnpjCpf = JOptionPane.showInputDialog("Qual o CNPJ/CPF?");
     		String rua = JOptionPane.showInputDialog("Qual a rua?");
-    		String comp = JOptionPane.showInputDialog("Qual o complemento?");
     		String num = JOptionPane.showInputDialog("Qual o num?");
+    		String comp = JOptionPane.showInputDialog("Qual o complemento?");
     		String bairro = JOptionPane.showInputDialog("Qual bairro?");
     		String cidade = JOptionPane.showInputDialog("Qual cidade?");
     		String estado = JOptionPane.showInputDialog("Qual estado?");
@@ -65,21 +79,32 @@ public class Principal {
     		fornecedor.setCep(cep);
     		fornecedor.setTelefone1(telef1);
     		
-    		// Mostrar Compra
-    		System.out.println("ID da compra: " + compra.getId());
-    		System.out.println("Usuario responsï¿½vel: " + compra.getUsuario());
-    		System.out.println("Produdos: " + compra.getProdutos());
-    		System.out.println("Status: " + compra.getStatus());
-    		System.out.println("Data da compra: " + compra.getData());
-    		System.out.println("Data Entrega da compra: " + compra.getDataEntrega());
+    		// Usuario
+    		Usuario usuario = new Usuario();
+    		usuario.setLogin("Joao");
+    		usuario.setNivPerm(1);
     		
-
+    		// Mostrar Compra
+    		System.out.println("----------------------------------------------------------------");
+    		System.out.println("CARACTERISTICAS DA COMPRA");
+    		System.out.println("ID da compra: " + compra.getId());
+    		System.out.println("Valor da Compra: " + valor);
+    		System.out.println("Data da compra: " + compra.getData());
+    		
+    		// Mostrar Usuario
+    		System.out.println("----------------------------------------------------------------");
+    		System.out.println("DADOS DO USUARIO");
+    		System.out.println("Usuario:"+ usuario.getLogin());
+    		System.out.println("Nivel de Permissao: " + usuario.getNivPerm() + " Gerente");
+    		
+    		System.out.println("----------------------------------------------------------------");
+    		System.out.println("DADOS Do FORNECEDOR");
     		System.out.println("ID do fornecedor: " + fornecedor.getId());
     		System.out.println("Nome: " + fornecedor.getNome());
     		System.out.println("CNPJ: " + fornecedor.getCnpjcpf());
     		System.out.println("Rua: " + fornecedor.getRua());
     		System.out.println("Complemento: " + fornecedor.getComp());
-    		System.out.println("Nï¿½mero: " + fornecedor.getNum());
+    		System.out.println("Numero: " + fornecedor.getNum());
     		System.out.println("Bairro: " + fornecedor.getBairro());
     		System.out.println("Cidade: " + fornecedor.getCidade());
     		
@@ -94,14 +119,12 @@ public class Principal {
     		venda.setId(Integer.valueOf(idVenda)); 
     		venda.setValor(Integer.valueOf(valor));
     		venda.setData(new ImplementandoData().dataAtual());
-                venda.setNomCliente(login);
-                venda.setProdutos( new Produtos().listaProdutos());
+            venda.setNomCliente(login);
+            venda.setProdutos( new Produtos().listaProdutos());
     		
-    		
-    		
-    	
-		
-                float somaValor = 0;
+            System.out.println("----------------------DADOS DA VENDA--------------------------");
+            
+                float somaValor2 = 0;
                
                 System.out.println("PRODUTOS E QUANTIDADES ");
                  
@@ -109,7 +132,7 @@ public class Principal {
                     JOptionPane. showInputDialog(x.nomProd);
                     String quant = JOptionPane.showInputDialog("quantidade?");
                     System.out.println( x.nomProd + " quantidade = " + quant );
-                    somaValor += x.precoVen;
+                    somaValor2 += x.precoVen;
                 }
                   
     		
@@ -127,7 +150,6 @@ public class Principal {
     		String telef1 = JOptionPane.showInputDialog("Qual telef1?");
     		
     		// Pessoa
-    		
     		Cliente cliente = new Cliente();
     		cliente.setId(Integer.valueOf(idPessoa));
     		cliente.setNome(nome);
@@ -143,21 +165,21 @@ public class Principal {
     		
     		// Usuario
     		Usuario usuario = new Usuario();
-    		usuario.setLogin("Joao");
-    		usuario.setNivPerm(1);
-    		
-    		// Mostrar Usuï¿½rio
-    		System.out.println("DADOS DO USUï¿½RIO");
-    		System.out.println("Usuï¿½rio:"+ usuario.getLogin());
-    		System.out.println("Nivel de Permissï¿½o: " + usuario.getNivPerm() + " Gerente");
+    		usuario.setLogin("Jose");
+    		usuario.setNivPerm(3);
     		
     		// Mostrar Venda
     		System.out.println("----------------------------------------------------------------");
-    		System.out.println("DADOS DA PRODUTO");
-    		System.out.println("ID da venda: " + venda.getId());
-    		System.out.println("Valor da Venda: " + somaValor);
-    		System.out.println("Produdos: " + venda.getProdutos());
-    		System.out.println("Data da compra: " + venda.getData());
+    		System.out.println("CARACTERISTICAS DA VENDA");
+    		System.out.println("ID da Venda: " + venda.getId());
+    		System.out.println("Valor da Venda: " + valor);
+    		System.out.println("Data da Venda: " + venda.getData());
+    		
+    		// Mostrar Usuário
+    		System.out.println("----------------------------------------------------------------");
+    		System.out.println("DADOS DO USUARIO");
+    		System.out.println("Usuario:"+ usuario.getLogin());
+    		System.out.println("Nivel de Permissao: " + usuario.getNivPerm() + " Vendedor");
     		
     		// Mostrar Cliente
     		System.out.println("----------------------------------------------------------------");
@@ -167,7 +189,7 @@ public class Principal {
     		System.out.println("CNPJ: " + cliente.getCnpjcpf());
     		System.out.println("Rua: " + cliente.getRua());
     		System.out.println("Complemento: " + cliente.getComp());
-    		System.out.println("Nï¿½mero: " + cliente.getNum());
+    		System.out.println("Numero: " + cliente.getNum());
     		System.out.println("Bairro: " + cliente.getBairro());
     		System.out.println("Cidade: " + cliente.getCidade());
         	
